@@ -41,17 +41,12 @@ for j in a:
   rating_info1.append(j['rating_info'])
   p_type1.append(j['p_type'])
 
-print(len(name))
-print(len(mrp))
-print(len(sp))
-print(len(img))
-print(len(p_brand1))
-print(len(p_type1))
-print(len(weight))
-print(len(rating_info1))
+
 
 length = len(name)
 for i in range(length):
+     a = "YES"
+     b = "NO"   
      list1 = []
      list1.append(name[i])
      list1.append(mrp[i])
@@ -59,7 +54,8 @@ for i in range(length):
      list1.append(img[i])
      list1.append(weight[i])
      list1.append(p_type1[i])
-
+     list1.append(a)
+     list1.append(b)
 
      print(list1)
      Worksheet.append_row(list1)
